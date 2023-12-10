@@ -6,12 +6,12 @@ namespace RPG
    {
       static void Main(string[] args)
       {
-         Arus hero = new("Arus", 2, "Knight");
-         Arus oponent = new("Maleficus", 99, "Devil");
+         Hero hero = new("Arus", 2, "Knight");
+         Wizard oponent = new("Maleficus", 99, "Devil");
 
 
-         Console.WriteLine(hero);
-         Console.WriteLine(oponent);
+         Console.WriteLine(hero.Attack());
+         Console.WriteLine(oponent.Attack());
       }
    }
 }

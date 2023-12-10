@@ -1,8 +1,12 @@
 ﻿namespace RPG.Entities
 {
-   public class Arus
+   public class Hero
    {
-      public Arus(string? name, int level, string? heroType)
+      public Hero()
+      {
+      }
+
+      public Hero(string? name, int level, string? heroType)
       {
          Name = name;
          Level = level;
@@ -16,6 +20,11 @@
       public override string ToString()
       {
          return $"{Name} {Level} {HeroType}";
+      }
+
+      public virtual string Attack()
+      {
+         return $"{Name} atacou com sua espada ...";
       }
    }
 }

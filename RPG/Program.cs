@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+﻿namespace RPG
 {
    internal class Program
    {
